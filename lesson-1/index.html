@@ -17,8 +17,10 @@
 
         <button @click="toggleShowBooks">
             <span v-if="showBooks">Hide Books</span>
-            <span v-if="!showBooks">Show Books</span>
+            <span v-else>Show Books</span>
+            
         </button>
+        <div v-show="showBooks">currently show books</div>
     </div>
 
     <script src="app.js"></script>
