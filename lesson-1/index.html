@@ -11,11 +11,13 @@
 
 
     <div id="app">
-        <p> {{ title }} - {{ author }} - {{ age }}</p>
+        <div v-if="showBooks">
+            <p> {{ title }} - {{ author }} - {{ age }}</p>
+        </div>
 
-        <button v-on:click="age++">Increase age</button>
-        <button v-on:click="age--">Decrease age</button>
-        <div @click="changeTitle('OathBringer')">Change book title</div>
+        <button @click="toggleShowBooks">
+            <span>Hide Books</span>
+        </button>
     </div>
 
     <script src="app.js"></script>
