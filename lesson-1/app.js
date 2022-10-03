@@ -6,6 +6,11 @@ const app = Vue.createApp(
                 author: 'Brandon Charlie',
                 age: 43
             }
+        },
+        methods: {
+            changeTitle() {
+                this.title = "Words of Radiance"
+            }
         }
     }
 )
