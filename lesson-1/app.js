@@ -5,15 +5,24 @@ const app = Vue.createApp(
                 showBooks: true,
                 title: 'The Final Empire',
                 author: 'Brandon Charlie',
-                age: 43
+                age: 43,
+                x: 0,
+                y: 0
             }
         },
         methods: {
             toggleShowBooks() {
                 this.showBooks = !this.showBooks
             },
-            handleEvent(e) {
+            handleEvent(e, data) {
                 console.log(e, e.type)
+                if (data) {
+                    console.log(data)
+                }
+            },
+            handleMousemove(e) {
+                this.x = e.offsetX
+                this.y = e.offsetY
             }
         }
     }
