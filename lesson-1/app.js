@@ -3,11 +3,11 @@ const app = Vue.createApp(
         data() {
             return {
                 showBooks: true,
+                url: 'https://shahmimajid.com',
                 books: [
-                    { title: 'wind of change', author: 'Petar Skalov'},
-                    { title: 'Tales of Naruto', author: 'Odo Kagawa'},
-                    { title: 'Fish and chips', author: 'Mohawk Gos'},
-                    { title: 'Teletubbies', author: 'CN network'},
+                    { title: 'name of the wind', author: 'patrick rothfuss', img: 'assets/1.jpg' },
+                    { title: 'the way of kings', author: 'brandon sanderson', img: 'assets/2.jpg' },
+                    { title: 'the final empire', author: 'brandon sanderson', img: 'assets/3.jpg' },
                 ]
             }
         },
