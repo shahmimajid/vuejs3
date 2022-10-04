@@ -3,11 +3,12 @@ const app = Vue.createApp(
         data() {
             return {
                 showBooks: true,
-                title: 'The Final Empire',
-                author: 'Brandon Charlie',
-                age: 43,
-                x: 0,
-                y: 0
+                books: [
+                    { title: 'wind of change', author: 'Petar Skalov'},
+                    { title: 'Tales of Naruto', author: 'Odo Kagawa'},
+                    { title: 'Fish and chips', author: 'Mohawk Gos'},
+                    { title: 'Teletubbies', author: 'CN network'},
+                ]
             }
         },
         methods: {
